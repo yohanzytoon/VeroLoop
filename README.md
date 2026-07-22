@@ -1,6 +1,6 @@
-# EvalFrame
+# VeroLoop
 
-EvalFrame is a Python SDK for evaluating one typed AI task consistently across provider candidates.
+VeroLoop is a Python SDK for evaluating one typed AI task consistently across provider candidates.
 
 ## Installation
 
