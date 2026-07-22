@@ -1,0 +1,19 @@
+task:
+  name: support-classification
+  dataset: data/support_eval.jsonl
+  output_model: schema.py:SupportAnswer
+  repetitions: 3
+candidates:
+  - name: careful
+    provider: fake
+    model: deterministic
+    prompt: Classify carefully.
+  - name: weak
+    provider: fake
+    model: deterministic
+    prompt: Classify quickly.
+metrics:
+  correctness: {fields: [category, should_escalate]}
+constraints: {max_concurrency: 8}
+reporters: {console: true, json: report.json}
+

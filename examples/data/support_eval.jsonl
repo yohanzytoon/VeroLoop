@@ -1,0 +1,5 @@
+{"id":"billing-1","inputs":{"message":"I was charged twice this month."},"expected":{"category":"billing","should_escalate":true}}
+{"id":"technical-1","inputs":{"message":"The app shows an error when I upload."},"expected":{"category":"technical","should_escalate":false}}
+{"id":"account-1","inputs":{"message":"I cannot reset my password."},"expected":{"category":"account","should_escalate":false}}
+{"id":"other-1","inputs":{"message":"Where can I read your accessibility policy?"},"expected":{"category":"other","should_escalate":false}}
+
